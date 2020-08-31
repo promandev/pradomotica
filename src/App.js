@@ -1,10 +1,16 @@
 import React from 'react';
 import logo from './assets/images/logo.svg';
 import './assets/css/App.css';
+import './assets/css/topMenuBar.css';
+
+import TopMenuBar from './components/TopMenuBar/topMenuBar';
 
 function App() {
   return (
     <div className="App">
+      <section className="sidebar">
+        <TopMenuBar/>
+      </section>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
