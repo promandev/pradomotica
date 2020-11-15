@@ -3,13 +3,13 @@ import logo from './assets/images/logo.svg';
 import './assets/css/App.css';
 import './assets/css/topMenuBar.css';
 
-import TopMenuBar from './components/TopMenuBar/topMenuBar';
+import Navbar from './components/Navbar/navbar';
 
 function App() {
   return (
     <div className="App">
       <section className="sidebar">
-        <TopMenuBar/>
+        <Navbar/>
       </section>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />

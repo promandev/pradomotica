@@ -1,18 +1,18 @@
 import React, {Component} from "react";
 
 
+class NavbarData extends Component{
 
-class topMenuInputHome extends Component{
     render(){
 
         // let topMenuInputHome = {
         // }
         return(
-            <div className="topMenuInputHome">
-                <p>InputHome</p>          
+            <div className="inputHome-wrapper">
+                <p>NavbarData</p>                
             </div>
             );
     }
 }
 
-export default topMenuInputHome;
+export default NavbarData;

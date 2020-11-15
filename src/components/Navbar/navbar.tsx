@@ -1,8 +1,10 @@
 import React, {Component} from "react";
 
+import NavbarData from './navbarData';
 
 
-class TopMenuBar extends Component{
+
+class Navbar extends Component{
     render(){
 
         // let topMenuBar = {
@@ -10,9 +12,10 @@ class TopMenuBar extends Component{
         return(
             <div className="topMenuBar">
                 <p>TopMenuBar</p>          
+                <NavbarData/>
             </div>
             );
     }
 }
 
-export default TopMenuBar;
+export default Navbar;
