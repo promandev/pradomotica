@@ -1,15 +1,23 @@
 import React from 'react';
 import logo from './assets/images/logo.svg';
 import './assets/css/App.css';
-import './assets/css/topMenuBar.css';
+import './assets/css/navbar.css';
 
 import Navbar from './components/Navbar/navbar';
+import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import Home from './pages/Home/home';
 
 function App() {
   return (
     <div className="App">
       <section className="sidebar">
-        <Navbar/>
+        <Router>
+          <Navbar/>
+          <Switch>
+            <Route path='/' exact component={Home}/>
+          </Switch>
+        </Router>
+
       </section>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
