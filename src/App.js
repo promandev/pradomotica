@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './assets/images/logo.svg';
 import './assets/css/App.css';
 import './assets/css/navbar.css';
 
@@ -11,12 +10,11 @@ import Garden from "./pages/sidebar/garden";
 import Lights from "./pages/sidebar/lights";
 import Cleaning from "./pages/sidebar/cleaning";
 
-
 function App() {
   return (
     <>
         <Router>
-          <Navbar/>
+          <Navbar/>        
           <Switch>
             <Route path='/' exact component={Home}/>
             <Route path='/security' exact component={Security}/>

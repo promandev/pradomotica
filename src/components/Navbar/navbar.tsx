@@ -5,6 +5,7 @@ import {Link} from "react-router-dom";
 import {IconContext} from "react-icons";
 
 import {SidebarData} from './sidebarData';
+import Nav from "../authentication/nav";
 
 
 
@@ -22,7 +23,11 @@ function Navbar() {
         <div className="navbar">
             <Link to="#" className="menu-bars">
                 <FaIcons.FaBars onClick={showSidebar}/>    
-            </Link>         
+            </Link>
+
+            <div className="authentication-buttons">
+                <Nav/>
+            </div>         
         </div>
 
         <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
@@ -49,6 +54,7 @@ function Navbar() {
         </nav>
 
         </IconContext.Provider>
+
         </>
     );
 }
