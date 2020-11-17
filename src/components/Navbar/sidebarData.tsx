@@ -1,8 +1,10 @@
-import React, {Component} from "react";
+import React from "react";
 
 import * as AiIcons from "react-icons/ai";
 import * as FaIcons from "react-icons/fa";
-import * as IoIcons from "react-icons/io";
+import * as MdIcons from "react-icons/md";
+import * as GiIcons from "react-icons/gi";
+import * as BsIcons from "react-icons/bs";
 
 
 export const SidebarData = [
@@ -15,42 +17,25 @@ export const SidebarData = [
     {
         title: 'Security',
         path: '/security',
-        icon: <IoIcons.IoIosPaper/>,
+        icon: <MdIcons.MdSecurity/>,
         cName: 'nav-text'
     },
     {
         title: 'Lights',
         path: '/lights',
-        icon: <IoIcons.IoIosBulb/>,
+        icon: <BsIcons.BsLightningFill/>,
         cName: 'nav-text'
     },
     {
         title: 'Garden',
         path: '/garden',
-        icon: <FaIcons.FaCartPlus/>,
+        icon: <GiIcons.GiFireFlower/>,
         cName: 'nav-text'
     },
     {
         title: 'Cleaning',
         path: '/cleaning',
-        icon: <IoIcons.IoMdPeople/>,
+        icon: <FaIcons.FaRecycle/>,
         cName: 'nav-text'
     }
 ]
-
-
-// class NavbarData extends Component{
-
-//     render(){
-
-//         // let topMenuInputHome = {
-//         // }
-//         return(
-//             <div className="inputHome-wrapper">
-//                 <p>NavbarData</p>                
-//             </div>
-//             );
-//     }
-// }
-
-// export default NavbarData;
