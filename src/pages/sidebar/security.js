@@ -2,18 +2,16 @@ import React from 'react'
 
 import Loading from '../../components/header/components/authentication/loading'
 
-
-function Home() {
+function Security() {
     
     return (
         <>
         <Loading/>
-        <div className="home">
-            <h1>Home</h1>                  
+        <div className="security">
+            <h1>Security</h1>                  
         </div>
         </>
     )
 }
 
-export default Home
-
+export default Security

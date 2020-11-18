@@ -21,7 +21,6 @@ function Navbar() {
             <Link to="#" className="menu-bars">
                 <FaIcons.FaBars onClick={showSidebar}/>    
             </Link>
-
             <div className="authentication-buttons">
                 <Nav/>
             </div>         
@@ -32,7 +31,6 @@ function Navbar() {
                 <li className="navbar-toggle">
                     <Link to="#" className="menu-bars">
                         <AiIcons.AiOutlineClose/>
-
                     </Link>
                 </li>
                 {SidebarData.map((item, index) => {

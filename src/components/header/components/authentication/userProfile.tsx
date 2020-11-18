@@ -3,7 +3,7 @@ import React from 'react'
 import { useAuth0 } from "@auth0/auth0-react"
 import JSONPretty from 'react-json-pretty';
 
-const Profile = () => {
+const UserProfile = () => {
 
     const { user, isAuthenticated } = useAuth0();
     return (
@@ -14,9 +14,8 @@ const Profile = () => {
             <p>{user.email}</p>
             <JSONPretty data={user}/>           
         </div>
-
         )
     )            
 }
 
-export default Profile
+export default UserProfile

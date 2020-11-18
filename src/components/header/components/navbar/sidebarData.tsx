@@ -7,10 +7,11 @@ import * as GiIcons from "react-icons/gi";
 import * as BsIcons from "react-icons/bs";
 
 
+
 export const SidebarData = [
     {
         title: 'Home',
-        path: '/',
+        path: '/home',
         icon: <AiIcons.AiFillHome/>,
         cName: 'nav-text'
     },
@@ -36,6 +37,12 @@ export const SidebarData = [
         title: 'Cleaning',
         path: '/cleaning',
         icon: <FaIcons.FaRecycle/>,
+        cName: 'nav-text'
+    },
+    {
+        title: 'Profile',
+        path: '/profile',
+        icon: <FaIcons.FaUserAlt/>,
         cName: 'nav-text'
     }
 ]

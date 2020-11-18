@@ -2,18 +2,16 @@ import React from 'react'
 
 import Loading from '../../components/header/components/authentication/loading'
 
-
-function Home() {
+function Garden() {
     
     return (
         <>
         <Loading/>
-        <div className="home">
-            <h1>Home</h1>                  
+        <div className="garden">
+            <h1>Garden</h1>                  
         </div>
         </>
     )
 }
 
-export default Home
-
+export default Garden
