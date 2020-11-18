@@ -2,16 +2,16 @@ import React from 'react';
 import './assets/css/App.css';
 import './assets/css/navbar.css';
 
-import Navbar from './components/Navbar/navbar';
 import { BrowserRouter as Router, Switch} from "react-router-dom";
 
 import Routes from './routes/Routes';
+import Navbar from './components/header/components/navbar/navbar';
 
 function App() {
   return (
     <>
         <Router>
-          <Navbar/>        
+          <Navbar/>       
           <Switch>
             <Routes/>
           </Switch>

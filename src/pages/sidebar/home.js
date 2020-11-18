@@ -1,7 +1,7 @@
 import React from 'react'
-import Profile from '../../components/authentication/profile'
 
 import { useAuth0 } from '@auth0/auth0-react'
+import Profile from '../../components/header/components/authentication/profile'
 
 function Home() {
 
