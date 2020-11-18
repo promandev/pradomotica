@@ -7,13 +7,10 @@ import {IconContext} from "react-icons";
 import {SidebarData} from './sidebarData';
 import Nav from "../authentication/nav";
 
-
-
-
-
 function Navbar() {
     const [sidebar, setSidebar] = useState(false)
     const showSidebar = () => setSidebar(!sidebar)
+
     
     return(
         <>

@@ -11,7 +11,7 @@
 .home, .security, .lights, .garden, .cleaning {
   display: flex;
   height: 90vh;
-  align-items: center;
-  justify-content: center;
-  font-size: 3rem;
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* font-size: 3rem; */
 }
