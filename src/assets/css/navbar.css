@@ -3,13 +3,16 @@
     height: 80px;
     display: flex;
     justify-content: flex-start;
-    align-items: center; 
+    align-items: center;
+    z-index: 10;
 }
 
 .menu-bars {
     margin-left: 2rem;
     font-size: 2rem;
     background: none;
+    background-color: #060b26;
+    z-index: 10;
 }
 
 .nav-menu {
@@ -21,12 +24,15 @@
     position: fixed;
     top: 0;
     left: -100%;
-    transition: 850ms;    
+    transition: 850ms;
+    z-index: 10;    
 }
 
 .nav-menu.active {
     left: 0;
     transition: 350ms;
+    background-color: #060b26;
+    z-index: 10;
 }
 
 .nav-text {
@@ -36,6 +42,8 @@
     padding: 8px 0px 8px 16px;
     list-style: none;
     height: 60px;
+    background-color: #060b26;
+    z-index: 10;
 }
 
 .nav-text a {
@@ -48,15 +56,19 @@
     align-items: center;
     padding: 0 16px;
     border-radius: 4px;
+    background-color: #060b26;
+    z-index: 10;
 }
 
 .nav-text a:hover {
     background-color: #1a83ff;
+    z-index: 10;
 }
 
 .nav-menu-items {
     width: 100%;
-
+    background-color: #060b26;
+    z-index: 10;
 }
 
 .navbar-toggle {
@@ -66,9 +78,11 @@
     display: flex;
     content: start;
     align-items: center;
+    z-index: 10;
 }
 
 .authentication-buttons {
+    background-color: #060b26;
     align-items: center;
     display: flex;
     margin-left: auto;
@@ -76,7 +90,13 @@
     margin-right: 16px;
     color: #f5f5f5;
     padding: 8px 0px 8px 16px;
-    height: 60px;    
+    height: 60px;
+    z-index: 10;
+}
+
+.authentication-buttons-items {
+    background-color: #060b26;
+    z-index: 10;
 }
 
 .authentication-buttons__login {
@@ -92,7 +112,8 @@
     transition-duration: 0.4s;
     text-decoration: none;
     overflow: hidden;    
-    border-radius: 12px;    
+    border-radius: 12px;
+    z-index: 10;   
 }
 
 .authentication-buttons__logout {
@@ -108,7 +129,8 @@
     transition-duration: 0.4s;
     text-decoration: none;
     overflow: hidden;    
-    border-radius: 12px;  
+    border-radius: 12px;
+    z-index: 10;  
 }
 
 .authentication-buttons__signup {
@@ -125,6 +147,7 @@
     text-decoration: none;
     overflow: hidden;    
     border-radius: 12px;
+    z-index: 10;
 }
 
 .authentication-buttons__login:after, .authentication-buttons__logout:after, .authentication-buttons__signup:after {
@@ -138,17 +161,20 @@
     margin-top: -120%;
     opacity: 0;
     transition: all 850ms;
-    border-radius: 12px; 
+    border-radius: 12px;
+    z-index: 10;
 }
 
 .authentication-buttons__login:active:after, .authentication-buttons__logout:active:after, .authentication-buttons__signup:active:after {
     padding: 0;
     margin: 0;
     opacity: 1;
-    transition: 0s
+    transition: 0s;
+    z-index: 10;
 }
 
 
 span {
     margin-left: 16px;
+    z-index: 10;
 }
