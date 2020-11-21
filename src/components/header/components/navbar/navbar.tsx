@@ -22,7 +22,9 @@ function Navbar() {
                 <FaIcons.FaBars onClick={showSidebar}/>    
             </Link>
             <div className="authentication-buttons">
-                <Nav/>
+                <span className="authentication-buttons-items">
+                    <Nav/>
+                </span>
             </div>         
         </div>
 

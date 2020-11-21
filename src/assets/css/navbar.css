@@ -76,8 +76,77 @@
     margin-right: 16px;
     color: #f5f5f5;
     padding: 8px 0px 8px 16px;
-    height: 60px;
+    height: 60px;    
 }
+
+.authentication-buttons__login {
+    position: relative;
+    background-color: #1a83ff;
+    border: none;
+    display: inline-block;
+    font-size: 18px;
+    color: #FFFFFF;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;    
+    border-radius: 12px;    
+}
+
+.authentication-buttons__logout {
+    position: relative;
+    background-color: #f44336;
+    border: none;
+    display: inline-block;
+    font-size: 18px;
+    color: #FFFFFF;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;    
+    border-radius: 12px;  
+}
+
+.authentication-buttons__signup {
+    position: relative;
+    background-color: #4CAF50;
+    border: none;
+    display: inline-block;
+    font-size: 18px;
+    color: #FFFFFF;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;    
+    border-radius: 12px;
+}
+
+.authentication-buttons__login:after, .authentication-buttons__logout:after, .authentication-buttons__signup:after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -32px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 850ms
+}
+
+.authentication-buttons__login:active:after, .authentication-buttons__logout:active:after, .authentication-buttons__signup:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
 
 span {
     margin-left: 16px;
