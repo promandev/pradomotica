@@ -137,7 +137,8 @@
     margin-left: -32px !important;
     margin-top: -120%;
     opacity: 0;
-    transition: all 850ms
+    transition: all 850ms;
+    border-radius: 12px; 
 }
 
 .authentication-buttons__login:active:after, .authentication-buttons__logout:active:after, .authentication-buttons__signup:active:after {
