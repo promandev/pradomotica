@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from "react";
 
+
 import Moment from 'moment';
 
 function WeatherCard() {
@@ -19,7 +20,7 @@ function WeatherCard() {
     }, [apiUrl]);    
     
     const kelvinToCelsius = (k) => {
-      return (k - 273.15).toFixed(1);
+      return (k - 273.15).toFixed(0);
     };
 
     function capitaliseFirstLetter(string) {
@@ -27,61 +28,48 @@ function WeatherCard() {
     }
             
     return (    
-        <div className="container">   
-        <p id='date'>
-          <strong>{date.format('DD/MM/YYYY, HH:MM')}</strong>
-        </p>
-          <div className="card mt-3 mx-auto" style={{ width: '60vw' }}>
+        <div className="weatherCard">
+          <div className="container-weatherCard_container">
             {apiData.main ? (
-              <div class="card-body text-center">
-                <img
-                  src={`http://openweathermap.org/img/w/${apiData.weather[0].icon}.png`}
-                  alt="weather status icon"
-                  className="weather-icon"
-                />
-                <p className="h2">
-                  {' '}
-                  <strong>{capitaliseFirstLetter(apiData.weather[0].description)}</strong>
-                </p>    
-                <p className="h2">
-                  <strong>Temperatura actual: {kelvinToCelsius(apiData.main.temp)}&deg; C</strong>
-                </p>
-    
-                <p className="h5">
-                  <i className="fas fa-map-marker-alt"></i>{' '}
-                  <strong>{apiData.name}, {apiData.sys.country}</strong>
-                </p>
-    
-                <div className="row mt-4">
-                  <div className="col-md-6">
-                    <p>
-                      <i class="fas fa-temperature-low "></i>{' '}
-                      <strong>
-                      Mín: {kelvinToCelsius(apiData.main.temp_min)}&deg; C
-                      </strong>
-                    </p>
-                    <p>
-                      <i className="fas fa-temperature-high"></i>{' '}
-                      <strong>
-                      Máx: {kelvinToCelsius(apiData.main.temp_max)}&deg; C
-                      </strong>
-                    </p>
+              <div className="container-weatherCard_widget">
+                <div className="container-weatherCard_data">
+                  <div className="container-weatherCard_data__location">
+                    <strong>{apiData.name}, {apiData.sys.country}</strong>
+                  </div> 
+                     
+                  <div className="container-weatherCard_data__weatherIcon">
+                    <img
+                    src={`http://openweathermap.org/img/w/${apiData.weather[0].icon}.png`}
+                    alt="weather status icon"
+                    className="container-weatherCard_data__icon"              
+                    />
+                    <div className="container-weatherCard_temp">
+                    <strong>{kelvinToCelsius(apiData.main.temp)}&deg;</strong>
+                    </div> 
                   </div>
-                  <div className="col-md-6">
+                  
+                  <p className="container-weatherCard_data__weather">
+                    <strong>{capitaliseFirstLetter(apiData.weather[0].description)}</strong>
+                  </p>    
 
-                    <p>
-                      {' '}
-                      <strong>Humedad: {apiData.main.humidity} %</strong>
-                    </p>
-                    <p>
-                      <strong>
-                        {' '}
-                        {/* {countries.getName(apiData.sys.country, 'es', {
-                          select: 'official',
-                        })} */}
-                      </strong>
-                    </p>
+                </div>
+                <ul className="container-weatherCard_list">
+
+                  <div className="container-weatherCard_diffTemp">
+                      <div className="container-weatherCard_diffTemp__min">                        
+                        Mín: {kelvinToCelsius(apiData.main.temp_min)}&deg;                      
+                      </div>
+                      <div className="container-weatherCard_diffTemp__max">                        
+                        Máx: {kelvinToCelsius(apiData.main.temp_max)}&deg;                       
+                      </div>
                   </div>
+
+                  <div className="container-weatherCard_humidity">
+                      Precipitaciones: {apiData.main.humidity} %
+                  </div>
+                </ul>
+                <div className="weatherCard_date">
+                Actualizado: {date.format('HH:MM - DD/MM/YYYY')}
                 </div>
               </div>
             ) : (

@@ -1,0 +1,112 @@
+.container-weatherCard_container {
+    justify-content: center;
+    align-items: center;
+    margin-left: 80px;
+    margin-top: 80px;
+}
+
+.container-weatherCard_widget {
+    background: linear-gradient(to bottom right, #3cc0fe 20%, #0066ff);
+    width: 400px;
+    height: 1.4;
+    border-radius: 20px;
+    box-shadow: 0px 60px 80px -20px , rgba(#27a5fd, 0.4);
+    position: relative;
+    overflow: hidden;
+}
+
+.container-weatherCard_data__location {
+    display: flex;
+    color: #d2e9fa;
+    font-size: 2em;
+    font-weight: 300;
+    width: 260px;
+    padding-bottom: 26px;    
+    margin-left: 8px;
+    margin-bottom: 8px;
+}
+.container-weatherCard_data {
+    font-family: sans-serif;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 60px;
+    border-bottom: 2px solid #9cd0ff;
+    margin-right: 60px;
+  }
+
+  .container-weatherCard_data__icon {
+    /* position: absolute; */
+
+
+    border-radius: 50%;
+    background: linear-gradient(270deg, rgba(60, 192, 254, 0.7) 40%, rgba(0, 102, 255, 0.6));
+    right: -40px;
+    top: -90px;
+
+    height: 80px;
+    width: 80px;
+    top: 200px;
+    left: 80px;
+  }
+
+  .container-weatherCard_data__weatherIcon {
+    display: flex;
+    color: #d2e9fa;
+    font-size: 2em;
+    font-weight: 300;
+    width: 260px;
+    margin-top: -16px;
+    padding-bottom: 16px;    
+    margin-left: 8px;
+  }
+
+  .container-weatherCard_temp {
+    width: 260px;
+    text-align: right;
+    color: white;
+    font-weight: 1;
+    font-size: 80px;
+  }
+
+  .container-weatherCard_data__weather {
+    display: flex;
+    color: #d2e9fa;
+    font-size: 2em;
+    font-weight: 300;
+    margin-top: -16px;
+    padding-bottom: 16px;    
+    margin-left: 8px;
+    margin-right: 60px;
+  }
+
+  .container-weatherCard_list {
+    text-align: center;
+    color: #d2e9fa;
+    font-size: 1.6em;
+    font-weight: 300;
+    margin-top: 16px;
+    margin-left: 60px;
+    margin-bottom: 20px;
+    margin-right: 60px;
+
+  }
+
+  .container-weatherCard_diffTemp {
+    align-content: center;
+    display: inline-flex;
+  }
+
+  .container-weatherCard_diffTemp__min {
+    padding-right: 8px;
+  }
+
+  .container-weatherCard_diffTemp__max {
+    padding-left: 8px;
+  }
+
+  .weatherCard_date {
+    color: #d2e9fa;
+    text-align: right;
+    margin-bottom: 26px;
+    margin-right: 30px;
+  }
