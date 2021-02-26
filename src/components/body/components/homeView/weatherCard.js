@@ -3,13 +3,10 @@ import React, {useState, useEffect} from "react";
 function WeatherCard() {
     
     const [apiData, setApiData] = useState({});
-    const [getState, setGetState] = useState('tamilnadu');
-    const [state, setState] = useState('tamilnadu');
+    const [state] = useState(3111867);
     
     const apiKey = process.env.REACT_APP_API_KEY;
-    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${state}&appid=${apiKey}`;
-
-    // http://api.openweathermap.org/data/2.5/weather?id=3111867&APPID=699de03dc5cd8cf07c71a99f2ddf12b6
+    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?id=${state}&lang=es&appid=${apiKey}`;
 
     useEffect(() => {
       fetch(apiUrl)
@@ -18,9 +15,13 @@ function WeatherCard() {
     }, [apiUrl]);    
     
     const kelvinToCelsius = (k) => {
-      return (k - 273.15).toFixed(2);
+      return (k - 273.15).toFixed(1);
     };
-    
+
+    function capitaliseFirstLetter(string) {
+      return string.charAt(0).toUpperCase() + string.slice(1);
+    }
+            
     return (    
         <div className="container">    
           <div className="card mt-3 mx-auto" style={{ width: '60vw' }}>
@@ -31,14 +32,17 @@ function WeatherCard() {
                   alt="weather status icon"
                   className="weather-icon"
                 />
-    
                 <p className="h2">
-                  {kelvinToCelsius(apiData.main.temp)}&deg; C
+                  {' '}
+                  <strong>{capitaliseFirstLetter(apiData.weather[0].description)}</strong>
+                </p>    
+                <p className="h2">
+                  <strong>Temperatura actual: {kelvinToCelsius(apiData.main.temp)}&deg; C</strong>
                 </p>
     
                 <p className="h5">
                   <i className="fas fa-map-marker-alt"></i>{' '}
-                  <strong>{apiData.name}</strong>
+                  <strong>{apiData.name}, {apiData.sys.country}</strong>
                 </p>
     
                 <div className="row mt-4">
@@ -46,20 +50,21 @@ function WeatherCard() {
                     <p>
                       <i class="fas fa-temperature-low "></i>{' '}
                       <strong>
-                        {kelvinToCelsius(apiData.main.temp_min)}&deg; C
+                      Mín: {kelvinToCelsius(apiData.main.temp_min)}&deg; C
                       </strong>
                     </p>
                     <p>
                       <i className="fas fa-temperature-high"></i>{' '}
                       <strong>
-                        {kelvinToCelsius(apiData.main.temp_max)}&deg; C
+                      Máx: {kelvinToCelsius(apiData.main.temp_max)}&deg; C
                       </strong>
                     </p>
                   </div>
                   <div className="col-md-6">
+
                     <p>
                       {' '}
-                      <strong>{apiData.weather[0].main}</strong>
+                      <strong>Humedad: {apiData.main.humidity} %</strong>
                     </p>
                     <p>
                       <strong>
