@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from "react";
 
+import Moment from 'moment';
+
 function WeatherCard() {
     
     const [apiData, setApiData] = useState({});
@@ -8,6 +10,8 @@ function WeatherCard() {
     const apiKey = process.env.REACT_APP_API_KEY;
     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?id=${state}&lang=es&appid=${apiKey}`;
 
+    let date = Moment();
+    
     useEffect(() => {
       fetch(apiUrl)
         .then((res) => res.json())
@@ -23,7 +27,10 @@ function WeatherCard() {
     }
             
     return (    
-        <div className="container">    
+        <div className="container">   
+        <p id='date'>
+          <strong>{date.format('DD/MM/YYYY, HH:MM')}</strong>
+        </p>
           <div className="card mt-3 mx-auto" style={{ width: '60vw' }}>
             {apiData.main ? (
               <div class="card-body text-center">
