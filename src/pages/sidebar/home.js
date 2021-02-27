@@ -11,7 +11,7 @@ function Home() {
         <Loading/>
         
         <div className="home">
-            <div>
+            <div className="home-title">
                 <h1>Home</h1>
             </div>
             <div>

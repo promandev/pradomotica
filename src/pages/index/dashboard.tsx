@@ -8,7 +8,7 @@ function Dashboard() {
 
     return (
         <div className="dashboard">
-            <h1 className="inicio">INICIO</h1>                     
+            <h1 className="inicio">PRADOMÓTICA</h1>                     
         </div>
     )
 }
