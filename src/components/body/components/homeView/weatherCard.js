@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from "react";
+import { FaTemperatureHigh, FaTemperatureLow } from 'react-icons/fa';
 
 
 import Moment from 'moment';
@@ -56,12 +57,13 @@ function WeatherCard() {
                 <ul className="container-weatherCard_list">
 
                   <div className="container-weatherCard_diffTemp">
-                      <div className="container-weatherCard_diffTemp__min">                        
-                        Mín: {kelvinToCelsius(apiData.main.temp_min)}&deg;                      
+                  <div className="container-weatherCard_diffTemp__max">   
+                      <div className="container-weatherCard_diffTemp__maxIcon"><FaTemperatureHigh/></div>                     
+                        {' '}{kelvinToCelsius(apiData.main.temp_max)}&deg;                       
                       </div>
-                      <div className="container-weatherCard_diffTemp__max">                        
-                        Máx: {kelvinToCelsius(apiData.main.temp_max)}&deg;                       
-                      </div>
+                      <p className="container-weatherCard_diffTemp__min">     
+                        <div className="container-weatherCard_diffTemp__minIcon"><FaTemperatureLow/></div>{kelvinToCelsius(apiData.main.temp_min)}&deg;                                         
+                      </p>
                   </div>
 
                   <div className="container-weatherCard_humidity">
