@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from "react";
 import { FaTemperatureHigh, FaTemperatureLow } from 'react-icons/fa';
+import { BsDropletFill} from 'react-icons/bs'
 
 
 import Moment from 'moment';
@@ -56,19 +57,18 @@ function WeatherCard() {
                 </div>
                 <ul className="container-weatherCard_list">
 
-                  <div className="container-weatherCard_diffTemp">
-                  <div className="container-weatherCard_diffTemp__max">   
-                      <div className="container-weatherCard_diffTemp__maxIcon"><FaTemperatureHigh/></div>                     
-                        {' '}{kelvinToCelsius(apiData.main.temp_max)}&deg;                       
-                      </div>
-                      <p className="container-weatherCard_diffTemp__min">     
-                        <div className="container-weatherCard_diffTemp__minIcon"><FaTemperatureLow/></div>{kelvinToCelsius(apiData.main.temp_min)}&deg;                                         
-                      </p>
-                  </div>
+                    <ul className="container-weatherCard_diffTemp">   
+                        <div className="container-weatherCard_diffTemp__max">
+                          <FaTemperatureHigh className="container-weatherCard_diffTemp__maxIcon"/>&nbsp;{kelvinToCelsius(apiData.main.temp_max)}&deg;  
+                        </div>                  
+                        <div className="container-weatherCard_diffTemp__min">     
+                          <FaTemperatureLow className="container-weatherCard_diffTemp__minIcon"/>&nbsp;{kelvinToCelsius(apiData.main.temp_min)}&deg;                              
+                        </div>
+                        <div className="container-weatherCard_humidity">
+                          <BsDropletFill className="container-weatherCard_humidityIcon"/>&nbsp;{apiData.main.humidity} %
+                        </div>
+                    </ul>
 
-                  <div className="container-weatherCard_humidity">
-                      Precipitaciones: {apiData.main.humidity} %
-                  </div>
                 </ul>
                 <div className="weatherCard_date">
                 Actualizado: {date.format('HH:MM - DD/MM/YYYY')}
