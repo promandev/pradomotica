@@ -1,8 +1,6 @@
 .container-weatherCard_container {
     justify-content: center;
     align-items: center;
-    margin-left: 80px;
-    margin-top: 80px;
 }
 
 .container-weatherCard_widget {

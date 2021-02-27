@@ -2,6 +2,7 @@ import React from 'react';
 import './assets/css/App.css';
 import './assets/css/navbar.css';
 import './assets/css/weatherCard.css';
+import './assets/css/home.css';
 
 import { BrowserRouter as Router, Switch} from "react-router-dom";
 

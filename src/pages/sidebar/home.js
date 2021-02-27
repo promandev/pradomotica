@@ -11,12 +11,12 @@ function Home() {
         <Loading/>
         
         <div className="home">
-            <div className="home-title">
-                <h1>Home</h1>
+            <div className="home-container">
+                <h1 className="home-title">Home</h1>
+                <div>
+                    <WeatherCard/>       
+                </div>
             </div>
-            <div>
-                <WeatherCard/>       
-            </div>                       
         </div>
         </>
     )
