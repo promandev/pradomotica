@@ -38,7 +38,7 @@
 
 
     border-radius: 50%;
-    background: linear-gradient(315deg, rgba(60, 192, 254, 0.7) 20%, rgba(0, 102, 255, 0.6));
+    background: linear-gradient(to top left, rgba(60, 192, 254, 0.7) 20%, rgba(0, 102, 255, 0.6));
     right: -40px;
     top: -90px;
     border: 2px solid #9cd0ff;
