@@ -16,9 +16,9 @@
 }
 
 .nav-menu {
-    background-color: #060b26;
+    /* background-color: #060b26; */
     width: 250px;
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     justify-content: center;
     position: fixed;
@@ -31,7 +31,7 @@
 .nav-menu.active {
     left: 0;
     transition: 350ms;
-    background-color: #060b26;
+    /* background-color: #060b26; */
     z-index: 10;
 }
 
@@ -42,7 +42,7 @@
     padding: 8px 0px 8px 16px;
     list-style: none;
     height: 60px;
-    background-color: #060b26;
+    /* background-color: #060b26; */
     z-index: 10;
 }
 
@@ -67,7 +67,6 @@
 
 .nav-menu-items {
     width: 100%;
-    background-color: #060b26;
     z-index: 10;
 }
 
@@ -79,6 +78,12 @@
     content: start;
     align-items: center;
     z-index: 10;
+}
+
+.navbar-bottomSide {
+    opacity: 0.85;
+    height: 100vh;
+    background: #060b26;
 }
 
 .authentication-buttons {
@@ -178,3 +183,5 @@ span {
     margin-left: 16px;
     z-index: 10;
 }
+
+

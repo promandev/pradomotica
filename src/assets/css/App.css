@@ -14,9 +14,8 @@
   height: 90vh;
   background-color: #D9E3F0;
   z-index: 0;
-  padding-left: 260px;
   padding-top: 30px;
   padding-bottom: 10px;
   padding-right: 10px;
-  justify-content: flex-start;
+  flex-flow: column;
 }

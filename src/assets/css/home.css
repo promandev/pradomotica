@@ -3,16 +3,14 @@
 } */
 
 .home-container {
+
     align-items: center;
-    margin-left: 80px;
-    width: 180vh;
+    justify-content: space-around;
+    display: grid;
 }
 
 .home-title {
     margin-bottom: 80px;
-    justify-content: flex-start;
-    align-items: center;
     text-align: center;
     border-bottom: 2px solid #060b26;
-    width: 500px;
 }
