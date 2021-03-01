@@ -1,6 +1,7 @@
 import React from 'react';
 
-import WeatherCard from '../../components/body/components/homeView/weatherCard';
+import CalendarWidget from '../../components/body/components/homeView/calendarWidget';
+import WeatherWidget from '../../components/body/components/homeView/weatherWidget';
 import Loading from '../../components/header/components/authentication/loading';
 
 
@@ -13,9 +14,16 @@ function Home() {
         <div className="home">
             <div className="home-container">
                 <h1 className="home-title">Home</h1>
-                <div>
-                    <WeatherCard/>       
-                </div>
+                <ul className="home-grid">
+                    <div>
+                    <WeatherWidget/>
+
+                    </div>
+                    <div>
+                    <CalendarWidget/>
+                        
+                    </div>
+                </ul>
             </div>
         </div>
         </>
