@@ -3,6 +3,8 @@ import './assets/css/App.scss';
 import './assets/css/navbar.scss';
 import './assets/css/weatherCard.scss';
 import './assets/css/dashboard.scss';
+import './assets/css/calendarWidget.scss';
+
 import './assets/css/pages/home.scss';
 import './assets/css/pages/security.scss';
 import './assets/css/pages/lights.scss';
