@@ -8,7 +8,9 @@ function Cleaning() {
         <>
         <Loading/>
         <div className="cleaning">
-            <h1>Cleaning</h1>                  
+            <div className="cleaning-container">
+                <h1 className="cleaning-title">Cleaning</h1>
+            </div>
         </div>
         </>
     )

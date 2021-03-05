@@ -8,7 +8,9 @@ function Garden() {
         <>
         <Loading/>
         <div className="garden">
-            <h1>Garden</h1>                  
+            <div className="garden-container">
+                <h1 className="garden-title">Garden</h1>
+            </div>
         </div>
         </>
     )

@@ -8,7 +8,9 @@ function Dashboard() {
 
     return (
         <div className="dashboard">
-            <h1 className="inicio">PRADOMÓTICA</h1>                     
+            <div className="dashboard-container">
+                <h1 className="dashboard-title">Index</h1>                     
+            </div>
         </div>
     )
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 import Loading from '../../components/header/components/authentication/loading'
 
 function Security() {
@@ -8,7 +9,9 @@ function Security() {
         <>
         <Loading/>
         <div className="security">
-            <h1>Security</h1>                  
+            <div className="security-container">
+                <h1 className="security-title">Security</h1>
+            </div>
         </div>
         </>
     )

@@ -8,7 +8,9 @@ function Lights() {
         <>
         <Loading/>
         <div className="lights">
-            <h1>Lights</h1>                  
+            <div className="lights-container">
+                <h1 className="lights-title">Lights</h1>
+            </div>
         </div>
         </>
     )

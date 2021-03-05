@@ -9,9 +9,9 @@ function Profile() {
         <>
         <Loading/>
         <div className="profile">
-            <div className="profile">
-                <UserProfile/>
-            </div>   
+            <div className="profile-container">
+                <h1 className="profile-title">Profile</h1>
+            </div>
         </div>
         </>
     )

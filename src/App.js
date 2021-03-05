@@ -2,7 +2,14 @@ import React from 'react';
 import './assets/css/App.css';
 import './assets/css/navbar.css';
 import './assets/css/weatherCard.css';
-import './assets/css/home.css';
+import './assets/css/dashboard.css';
+import './assets/css/pages/home.css';
+import './assets/css/pages/security.css';
+import './assets/css/pages/lights.css';
+import './assets/css/pages/garden.css';
+import './assets/css/pages/cleaning.css';
+import './assets/css/pages/profile.css';
+
 
 import { BrowserRouter as Router, Switch} from "react-router-dom";
 
