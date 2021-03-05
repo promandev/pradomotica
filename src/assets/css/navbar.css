@@ -2,9 +2,14 @@
     background-color: #060b26;
     height: 80px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     z-index: 10;
+}
+
+.navbar-title{
+    color: #D9E3F0;
+    margin-left: 190px;
 }
 
 .menu-bars {

@@ -11,7 +11,8 @@ function Profile() {
         <div className="profile">
             <div className="profile-container">
                 <h1 className="profile-title">Profile</h1>
-            </div>
+                <UserProfile/>
+            </div>   
         </div>
         </>
     )

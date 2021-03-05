@@ -21,6 +21,7 @@ function Navbar() {
             <Link to="#" className="menu-bars">
                 <FaIcons.FaBars onClick={showSidebar}/>    
             </Link>
+            <h1 className="navbar-title">PRADOMÓTICA</h1>
             <div className="authentication-buttons">
                 <span className="authentication-buttons-items">
                     <Nav/>
