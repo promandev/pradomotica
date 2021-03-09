@@ -1,8 +1,14 @@
-.react-calendar { 
-    
-    // width: 600px;
+.calendar-widget {
     border-radius: 20px;
     border: 3px solid #060b26;
+}
+
+
+.react-calendar { 
+    
+    padding: 3px;
+    border-radius: 20px;
+    border: none !important;
 
     // .react-calendar__navigation {
     //     .react-calendar__navigation__arrow {

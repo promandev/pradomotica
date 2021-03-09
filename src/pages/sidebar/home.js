@@ -19,7 +19,7 @@ function Home() {
                     <WeatherWidget/>
 
                     </div>
-                    <div>
+                    <div className='calendar-widget'>
                     <CalendarWidget/>
                         
                     </div>
